@@ -17,7 +17,7 @@ const routes: Routes = [
       { path: 'search', component: SearchPageComponent },
       { path: 'edit/:id', component: NewPageComponent },
       { path: 'list', component: ListPageComponent },
-      { path: ':id', component: HeroPageComponent }, // Importante donde poner esta line, porque si se poner arriba, coinciden todas las rutas.
+      { path: ':id', component: HeroPageComponent }, // Importante donde poner esta linea, porque si se pone arriba, coinciden todas las rutas.
       { path: '**', redirectTo: 'list' }
     ]
   }
