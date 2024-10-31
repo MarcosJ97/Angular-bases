@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 
-// localhost:4200/heroes/
+
+// localhost:4200/heroes
 const routes: Routes = [
   {
     path: '',
@@ -17,8 +17,8 @@ const routes: Routes = [
       { path: 'search', component: SearchPageComponent },
       { path: 'edit/:id', component: NewPageComponent },
       { path: 'list', component: ListPageComponent },
-      { path: ':id', component: HeroPageComponent }, // Importante donde poner esta linea, porque si se pone arriba, coinciden todas las rutas.
-      { path: '**', redirectTo: 'list' }
+      { path: ':id', component: HeroPageComponent },
+      { path: '**', redirectTo: 'list' },
     ]
   }
 ];
@@ -27,5 +27,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-
 export class HeroesRoutingModule { }
