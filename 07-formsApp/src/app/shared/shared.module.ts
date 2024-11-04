@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     SideMenuComponent
@@ -17,4 +15,5 @@ import { RouterModule } from '@angular/router';
     SideMenuComponent
   ]
 })
+
 export class SharedModule { }
